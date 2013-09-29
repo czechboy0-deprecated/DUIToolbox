@@ -3,7 +3,7 @@ DUIToolbox
 
 iOS UIKit Toolbox
 
-Created by Honza Dvorsky (c) 2013 (See LICENCE file for information about the licence of this software)
+Created by Honza Dvorsky (c) 2013 (Distributed under the MIT Licence - see LICENCE file.)
 http://honzadvorsky.com
 
 The DUIToolbox is a mini library of classes useful for iOS UIKit developers.
