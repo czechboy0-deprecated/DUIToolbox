@@ -6,6 +6,7 @@ Pod::Spec.new do |s|
   s.license      = 'MIT'
   s.author       = { "Honza Dvorsky" => "jan.dvorsky@yahoo.com" }
   s.source       = { :git => "https://github.com/czechboy0/DUIToolbox.git", :tag => s.version.to_s }
+  s.social_media_url = "http://twitter.com/czechboy0"
 
   s.platform     = :ios, '6.0'
   s.ios.deployment_target = '6.0'

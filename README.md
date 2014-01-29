@@ -3,11 +3,17 @@
 [![Version](http://cocoapod-badges.herokuapp.com/v/DUIToolbox/badge.png)](http://cocoadocs.org/docsets/DUIToolbox)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/DUIToolbox/badge.png)](http://cocoadocs.org/docsets/DUIToolbox)
 
-## Usage
+iOS UIKit Toolbox
 
-To run the example project; clone the repo, and run `pod install` from the Project directory first. Then just include the needed files. Enjoy.
+Created by Honza Dvorsky - http://honzadvorsky.com
 
-## Requirements
+The DUIToolbox is a mini library of classes useful for iOS UIKit developers.
+
+### Constraint Factory
+This class provides shortcuts for creating the most common autolayout constraints. If you find that there are some common usecases missing, please let me know and I'll be happy to add them.
+
+### Other classes
+Are documented in their header files.
 
 ## Installation
 
@@ -18,7 +24,7 @@ it simply add the following line to your Podfile:
 
 ## Author
 
-Honza Dvorsky, jan.dvorsky@yahoo.com
+Honza Dvorsky, honzadvorsky.com
 
 ## License
 
