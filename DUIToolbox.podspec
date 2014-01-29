@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "DUIToolbox"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "The DUIToolbox is a mini library of classes useful for iOS UIKit developers."
   s.description  = <<-DESC
                     The DUIToolbox is a mini library of classes useful for iOS UIKit developers.
