@@ -174,7 +174,7 @@
     assert([view superview]);
     
     NSString * format = [NSString stringWithFormat:@"V:[view]-(%f)-|", constant];
-
+    
     NSArray * cs = [NSLayoutConstraint constraintsWithVisualFormat:format
                                                            options:0
                                                            metrics:nil
@@ -272,6 +272,105 @@
     return [self _prepareConstraintsForReturn:allConstraints];
 }
 
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
++ (NSLayoutConstraint *) _constraintEqualAttribute:(NSLayoutAttribute)attribute ofItem:(id)item1 andItem:(id)item2
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+{
+    UIView * view1 = [self _convertAndStripOfAutoresizingMask:item1];
+    UIView * view2 = [self _convertAndStripOfAutoresizingMask:item2];
+    
+    NSLayoutConstraint * constraint =
+    [NSLayoutConstraint constraintWithItem:view1
+                                 attribute:attribute
+                                 relatedBy:NSLayoutRelationEqual
+                                    toItem:view2
+                                 attribute:attribute
+                                multiplier:1.0
+                                  constant:0.0];
+    return [self _prepareConstraintForReturn:constraint];
+}
+
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
++ (NSLayoutConstraint *) constraintEqualHeightsOfItem:(id)item1 andItem:(id)item2
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+{
+    return [self _constraintEqualAttribute:NSLayoutAttributeHeight ofItem:item1 andItem:item2];
+}
+
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
++ (NSArray *) constraintsEqualSizesOfItem:(id)item1 andItem:(id)item2
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+{
+    NSArray * allConstraints = @[
+                                 [self constraintEqualWidthsOfItem:item1 andItem:item2],
+                                 [self constraintEqualHeightsOfItem:item1 andItem:item2],
+                                 ];
+    
+    return allConstraints;
+}
+
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
++ (NSLayoutConstraint *) constraintEqualWidthsOfItem:(id)item1 andItem:(id)item2
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+{
+    return [self _constraintEqualAttribute:NSLayoutAttributeWidth ofItem:item1 andItem:item2];
+}
+
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
++ (NSArray *) _constraintAllEqualAttribute:(NSLayoutAttribute)attribute ofItems:(NSArray *)items
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+{
+    NSMutableArray * allConstraints = [NSMutableArray new];
+    id __block superview = nil;
+    
+    [items enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop){
+        
+        UIView * view = [self _convertAndStripOfAutoresizingMask:obj];
+        assert(view.superview);
+        
+        if (idx == 0) {
+            superview = view.superview;
+        }
+        assert(view.superview == superview);
+        //make sure all the items have the same superview
+        
+        if (idx > 0) {
+            
+            UIView * prevView = [self _convertAndStripOfAutoresizingMask:items[idx-1]];
+            [allConstraints addObject:[self _constraintEqualAttribute:attribute ofItem:prevView andItem:view]];
+        }
+    }];
+    
+    return [self _prepareConstraintsForReturn:allConstraints];
+}
+
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
++ (NSArray *) constraintAllEqualWidthsOfItems:(NSArray *)items
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+{
+    return [self _constraintAllEqualAttribute:NSLayoutAttributeWidth ofItems:items];
+}
+
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
++ (NSArray *) constraintAllEqualHeightsOfItems:(NSArray *)items
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+{
+    return [self _constraintAllEqualAttribute:NSLayoutAttributeHeight ofItems:items];
+}
+
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
++ (NSArray *) constraintAllEqualSizesOfItems:(NSArray *)items
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+{
+    NSMutableArray * allConstraints = [NSMutableArray new];
+    
+    [allConstraints addObjectsFromArray:[self constraintAllEqualWidthsOfItems:items]];
+    [allConstraints addObjectsFromArray:[self constraintAllEqualHeightsOfItems:items]];
+
+    return allConstraints;
+}
+
+
 #pragma mark - Private
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 + (UIView *) _convertAndStripOfAutoresizingMask:(id)item
@@ -290,7 +389,7 @@
 {
     //do anything we need before the constraint is returned
     
-    //YES, archive (so that we can copy the UIViews through archiving/unarchiving)
+    //YES, archive (so that we can copy the UIViews)
     constraint.shouldBeArchived = YES;
     
     return constraint;
@@ -306,7 +405,6 @@
     
     return constraints;
 }
-
 @end
 
 

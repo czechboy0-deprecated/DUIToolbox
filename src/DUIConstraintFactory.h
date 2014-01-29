@@ -157,4 +157,49 @@
  */
 + (NSArray *) constraintsItem:(id)item intoSuperviewWithEdges:(UIEdgeInsets)edges;
 
+/**
+ Creates constraint for two items having the same width.
+ @param item1 A UIView.
+ @param item2 A UIView.
+ @return NSLayoutConstraint - add it to the items' common superview : [superview addConstraint: constraint ]];
+ */
++ (NSLayoutConstraint *) constraintEqualWidthsOfItem:(id)item1 andItem:(id)item2;
+
+/**
+ Creates constraint for two items having the same height.
+ @param item1 A UIView.
+ @param item2 A UIView.
+ @return NSLayoutConstraint - add it to the items' common superview : [superview addConstraint: constraint ]];
+ */
++ (NSLayoutConstraint *) constraintEqualHeightsOfItem:(id)item1 andItem:(id)item2;
+
+/**
+ Creates constraints for two items having the same size.
+ @param item1 A UIView.
+ @param item2 A UIView.
+ @return NSLayoutConstraint - add it to the items' common superview : [superview addConstraint: constraint ]];
+ */
++ (NSArray *) constraintsEqualSizesOfItem:(id)item1 andItem:(id)item2;
+
+/**
+ Creates constraints for equi-width items.
+ @param items An array of UIViews.
+ @return NSArray of NSLayoutConstraints - add them to the items' superview.
+ */
++ (NSArray *) constraintAllEqualWidthsOfItems:(NSArray *)items;
+
+/**
+ Creates constraints for equi-height items.
+ @param items An array of UIViews.
+ @return NSArray of NSLayoutConstraints - add them to the items' superview.
+ */
++ (NSArray *) constraintAllEqualHeightsOfItems:(NSArray *)items;
+
+/**
+ Creates constraints for equi-sized items.
+ @param items An array of UIViews.
+ @return NSArray of NSLayoutConstraints - add them to the items' superview.
+ */
++ (NSArray *) constraintAllEqualSizesOfItems:(NSArray *)items;
+
 @end
