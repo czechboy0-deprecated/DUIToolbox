@@ -2,9 +2,6 @@ Pod::Spec.new do |s|
   s.name         = "DUIToolbox"
   s.version      = "0.1.1"
   s.summary      = "The DUIToolbox is a mini library of classes useful for iOS UIKit developers."
-  s.description  = <<-DESC
-                    The DUIToolbox is a mini library of classes useful for iOS UIKit developers.
-                   DESC
   s.homepage     = "https://github.com/czechboy0/DUIToolbox"
   s.license      = 'MIT'
   s.author       = { "Honza Dvorsky" => "jan.dvorsky@yahoo.com" }
