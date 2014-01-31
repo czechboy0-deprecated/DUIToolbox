@@ -20,7 +20,7 @@ typedef void(^DUIBlockAlertViewClicked)(DUIBlockAlertView * AlertView, NSInteger
              cancelButtonTitle:(NSString *)cancelButtonTitle
              otherButtonTitles:(NSString *)otherButtonTitles, ...;
 
-@property (nonatomic, strong, readonly) DUIBlockAlertViewClicked clickedBlock;
+@property (nonatomic, copy, readonly) DUIBlockAlertViewClicked clickedBlock;
 
 //useful initializer
 - (instancetype) initWithError:(NSError *)error

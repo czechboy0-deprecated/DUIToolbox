@@ -24,7 +24,7 @@ it simply add the following line to your Podfile:
 
 ## Author
 
-Honza Dvorsky, honzadvorsky.com
+Honza Dvorsky, http://honzadvorsky.com
 
 ## License
 

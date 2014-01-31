@@ -20,6 +20,6 @@ typedef void(^DUIBlockActionSheetClicked)(DUIBlockActionSheet * actionSheet, NSI
         destructiveButtonTitle:(NSString *)destructiveButtonTitle
              otherButtonTitles:(NSString *)otherButtonTitles, ...;
 
-@property (nonatomic, strong, readonly) DUIBlockActionSheetClicked clickedBlock;
+@property (nonatomic, copy, readonly) DUIBlockActionSheetClicked clickedBlock;
 
 @end
