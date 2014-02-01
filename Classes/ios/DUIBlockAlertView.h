@@ -9,7 +9,7 @@
 
 @class DUIBlockAlertView;
 
-typedef void(^DUIBlockAlertViewClicked)(DUIBlockAlertView * AlertView, NSInteger clickedIndex);
+typedef void(^DUIBlockAlertViewClicked)(DUIBlockAlertView * alertView, NSInteger clickedIndex);
 
 @interface DUIBlockAlertView : UIAlertView<UIAlertViewDelegate>
 

@@ -1,7 +1,7 @@
 pod "DUIToolbox", :path => "../DUIToolbox.podspec"
 
-target "Demo" do
-end
+#target "ToolboxDemo" do
+#end
 
-target "DemoTests" do
-end
+#target "ToolboxDemoTests" do
+#end

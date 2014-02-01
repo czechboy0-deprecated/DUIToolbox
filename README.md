@@ -22,7 +22,13 @@ it simply add the following line to your Podfile:
 
     pod "DUIToolbox"
 
+## Demo project
+
+You can find a demo project in the Project folder. But don't forget to run `pod install` before building it, so that the project can use the library!
+
 ## Author
+
+In case of any problems, shout at me on [Twitter](http://twitter.com/czechboy0), create an issue here on GitHub (or even better: fork the repo, fix it and send a pull request) or choose [any other way](http://honzadvorsky.com/contact) of contacting me.
 
 Honza Dvorsky, http://honzadvorsky.com
 
