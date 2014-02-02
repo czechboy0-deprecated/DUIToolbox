@@ -21,19 +21,19 @@
 		3A5F2602189EA5CF00C9ADB0 /* TestbedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5F2601189EA5CF00C9ADB0 /* TestbedTests.m */; };
 		3A5F2630189EAC1800C9ADB0 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5F262F189EAC1800C9ADB0 /* Storyboard.storyboard */; };
 		3A5F2633189EAC3200C9ADB0 /* DUITestbedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5F2632189EAC3200C9ADB0 /* DUITestbedViewController.m */; };
-		3A7C9D56189EDB6C00E6D517 /* DUIActivityIndicatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D3D189EDB6C00E6D517 /* DUIActivityIndicatorItem.m */; };
-		3A7C9D57189EDB6C00E6D517 /* DUIBlockActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D3F189EDB6C00E6D517 /* DUIBlockActionSheet.m */; };
-		3A7C9D58189EDB6C00E6D517 /* DUIBlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D41189EDB6C00E6D517 /* DUIBlockAlertView.m */; };
-		3A7C9D59189EDB6C00E6D517 /* DUIBlockButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D43189EDB6C00E6D517 /* DUIBlockButton.m */; };
-		3A7C9D5A189EDB6C00E6D517 /* DUIBlockDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D45189EDB6C00E6D517 /* DUIBlockDispatcher.m */; };
-		3A7C9D5B189EDB6C00E6D517 /* DUIConstraintFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D47189EDB6C00E6D517 /* DUIConstraintFactory.m */; };
-		3A7C9D5C189EDB6C00E6D517 /* DUIFastOneWayProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D49189EDB6C00E6D517 /* DUIFastOneWayProxy.m */; };
-		3A7C9D5D189EDB6C00E6D517 /* DUIModalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D4B189EDB6C00E6D517 /* DUIModalActivityView.m */; };
-		3A7C9D5E189EDB6C00E6D517 /* DUIObjectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D4D189EDB6C00E6D517 /* DUIObjectProxy.m */; };
-		3A7C9D5F189EDB6C00E6D517 /* NSArray+IterateTrees.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D4F189EDB6C00E6D517 /* NSArray+IterateTrees.m */; };
-		3A7C9D60189EDB6C00E6D517 /* NSObject+MultipleDelegatesSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D51189EDB6C00E6D517 /* NSObject+MultipleDelegatesSupport.m */; };
-		3A7C9D61189EDB6C00E6D517 /* NSObject+PerformBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D53189EDB6C00E6D517 /* NSObject+PerformBlock.m */; };
-		3A7C9D62189EDB6C00E6D517 /* UITableView+MultipleSelectionEnhacements.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D55189EDB6C00E6D517 /* UITableView+MultipleSelectionEnhacements.m */; };
+		3A7C9D80189EEA3200E6D517 /* DUIBlockDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D66189EEA3200E6D517 /* DUIBlockDispatcher.m */; };
+		3A7C9D81189EEA3200E6D517 /* DUIFastOneWayProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D68189EEA3200E6D517 /* DUIFastOneWayProxy.m */; };
+		3A7C9D82189EEA3200E6D517 /* DUIObjectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D6A189EEA3200E6D517 /* DUIObjectProxy.m */; };
+		3A7C9D83189EEA3200E6D517 /* NSArray+IterateTrees.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D6C189EEA3200E6D517 /* NSArray+IterateTrees.m */; };
+		3A7C9D84189EEA3200E6D517 /* NSObject+MultipleDelegatesSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D6E189EEA3200E6D517 /* NSObject+MultipleDelegatesSupport.m */; };
+		3A7C9D85189EEA3200E6D517 /* NSObject+PerformBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D70189EEA3200E6D517 /* NSObject+PerformBlock.m */; };
+		3A7C9D86189EEA3200E6D517 /* DUIActivityIndicatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D73189EEA3200E6D517 /* DUIActivityIndicatorItem.m */; };
+		3A7C9D87189EEA3200E6D517 /* DUIBlockActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D75189EEA3200E6D517 /* DUIBlockActionSheet.m */; };
+		3A7C9D88189EEA3200E6D517 /* DUIBlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D77189EEA3200E6D517 /* DUIBlockAlertView.m */; };
+		3A7C9D89189EEA3200E6D517 /* DUIBlockButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D79189EEA3200E6D517 /* DUIBlockButton.m */; };
+		3A7C9D8A189EEA3200E6D517 /* DUIConstraintFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D7B189EEA3200E6D517 /* DUIConstraintFactory.m */; };
+		3A7C9D8B189EEA3200E6D517 /* DUIModalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D7D189EEA3200E6D517 /* DUIModalActivityView.m */; };
+		3A7C9D8C189EEA3200E6D517 /* UITableView+MultipleSelectionEnhacements.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D7F189EEA3200E6D517 /* UITableView+MultipleSelectionEnhacements.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,32 +67,32 @@
 		3A5F2631189EAC3200C9ADB0 /* DUITestbedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUITestbedViewController.h; sourceTree = "<group>"; };
 		3A5F2632189EAC3200C9ADB0 /* DUITestbedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUITestbedViewController.m; sourceTree = "<group>"; };
 		3A5F2634189EB4B800C9ADB0 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "../../../../../../Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework"; sourceTree = "<group>"; };
-		3A7C9D3C189EDB6C00E6D517 /* DUIActivityIndicatorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIActivityIndicatorItem.h; sourceTree = "<group>"; };
-		3A7C9D3D189EDB6C00E6D517 /* DUIActivityIndicatorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIActivityIndicatorItem.m; sourceTree = "<group>"; };
-		3A7C9D3E189EDB6C00E6D517 /* DUIBlockActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIBlockActionSheet.h; sourceTree = "<group>"; };
-		3A7C9D3F189EDB6C00E6D517 /* DUIBlockActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIBlockActionSheet.m; sourceTree = "<group>"; };
-		3A7C9D40189EDB6C00E6D517 /* DUIBlockAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIBlockAlertView.h; sourceTree = "<group>"; };
-		3A7C9D41189EDB6C00E6D517 /* DUIBlockAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIBlockAlertView.m; sourceTree = "<group>"; };
-		3A7C9D42189EDB6C00E6D517 /* DUIBlockButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIBlockButton.h; sourceTree = "<group>"; };
-		3A7C9D43189EDB6C00E6D517 /* DUIBlockButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIBlockButton.m; sourceTree = "<group>"; };
-		3A7C9D44189EDB6C00E6D517 /* DUIBlockDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIBlockDispatcher.h; sourceTree = "<group>"; };
-		3A7C9D45189EDB6C00E6D517 /* DUIBlockDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIBlockDispatcher.m; sourceTree = "<group>"; };
-		3A7C9D46189EDB6C00E6D517 /* DUIConstraintFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIConstraintFactory.h; sourceTree = "<group>"; };
-		3A7C9D47189EDB6C00E6D517 /* DUIConstraintFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIConstraintFactory.m; sourceTree = "<group>"; };
-		3A7C9D48189EDB6C00E6D517 /* DUIFastOneWayProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIFastOneWayProxy.h; sourceTree = "<group>"; };
-		3A7C9D49189EDB6C00E6D517 /* DUIFastOneWayProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIFastOneWayProxy.m; sourceTree = "<group>"; };
-		3A7C9D4A189EDB6C00E6D517 /* DUIModalActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIModalActivityView.h; sourceTree = "<group>"; };
-		3A7C9D4B189EDB6C00E6D517 /* DUIModalActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIModalActivityView.m; sourceTree = "<group>"; };
-		3A7C9D4C189EDB6C00E6D517 /* DUIObjectProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIObjectProxy.h; sourceTree = "<group>"; };
-		3A7C9D4D189EDB6C00E6D517 /* DUIObjectProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIObjectProxy.m; sourceTree = "<group>"; };
-		3A7C9D4E189EDB6C00E6D517 /* NSArray+IterateTrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+IterateTrees.h"; sourceTree = "<group>"; };
-		3A7C9D4F189EDB6C00E6D517 /* NSArray+IterateTrees.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+IterateTrees.m"; sourceTree = "<group>"; };
-		3A7C9D50189EDB6C00E6D517 /* NSObject+MultipleDelegatesSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MultipleDelegatesSupport.h"; sourceTree = "<group>"; };
-		3A7C9D51189EDB6C00E6D517 /* NSObject+MultipleDelegatesSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MultipleDelegatesSupport.m"; sourceTree = "<group>"; };
-		3A7C9D52189EDB6C00E6D517 /* NSObject+PerformBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PerformBlock.h"; sourceTree = "<group>"; };
-		3A7C9D53189EDB6C00E6D517 /* NSObject+PerformBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PerformBlock.m"; sourceTree = "<group>"; };
-		3A7C9D54189EDB6C00E6D517 /* UITableView+MultipleSelectionEnhacements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+MultipleSelectionEnhacements.h"; sourceTree = "<group>"; };
-		3A7C9D55189EDB6C00E6D517 /* UITableView+MultipleSelectionEnhacements.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+MultipleSelectionEnhacements.m"; sourceTree = "<group>"; };
+		3A7C9D65189EEA3200E6D517 /* DUIBlockDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIBlockDispatcher.h; sourceTree = "<group>"; };
+		3A7C9D66189EEA3200E6D517 /* DUIBlockDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIBlockDispatcher.m; sourceTree = "<group>"; };
+		3A7C9D67189EEA3200E6D517 /* DUIFastOneWayProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIFastOneWayProxy.h; sourceTree = "<group>"; };
+		3A7C9D68189EEA3200E6D517 /* DUIFastOneWayProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIFastOneWayProxy.m; sourceTree = "<group>"; };
+		3A7C9D69189EEA3200E6D517 /* DUIObjectProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIObjectProxy.h; sourceTree = "<group>"; };
+		3A7C9D6A189EEA3200E6D517 /* DUIObjectProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIObjectProxy.m; sourceTree = "<group>"; };
+		3A7C9D6B189EEA3200E6D517 /* NSArray+IterateTrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+IterateTrees.h"; sourceTree = "<group>"; };
+		3A7C9D6C189EEA3200E6D517 /* NSArray+IterateTrees.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+IterateTrees.m"; sourceTree = "<group>"; };
+		3A7C9D6D189EEA3200E6D517 /* NSObject+MultipleDelegatesSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MultipleDelegatesSupport.h"; sourceTree = "<group>"; };
+		3A7C9D6E189EEA3200E6D517 /* NSObject+MultipleDelegatesSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MultipleDelegatesSupport.m"; sourceTree = "<group>"; };
+		3A7C9D6F189EEA3200E6D517 /* NSObject+PerformBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PerformBlock.h"; sourceTree = "<group>"; };
+		3A7C9D70189EEA3200E6D517 /* NSObject+PerformBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PerformBlock.m"; sourceTree = "<group>"; };
+		3A7C9D72189EEA3200E6D517 /* DUIActivityIndicatorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIActivityIndicatorItem.h; sourceTree = "<group>"; };
+		3A7C9D73189EEA3200E6D517 /* DUIActivityIndicatorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIActivityIndicatorItem.m; sourceTree = "<group>"; };
+		3A7C9D74189EEA3200E6D517 /* DUIBlockActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIBlockActionSheet.h; sourceTree = "<group>"; };
+		3A7C9D75189EEA3200E6D517 /* DUIBlockActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIBlockActionSheet.m; sourceTree = "<group>"; };
+		3A7C9D76189EEA3200E6D517 /* DUIBlockAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIBlockAlertView.h; sourceTree = "<group>"; };
+		3A7C9D77189EEA3200E6D517 /* DUIBlockAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIBlockAlertView.m; sourceTree = "<group>"; };
+		3A7C9D78189EEA3200E6D517 /* DUIBlockButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIBlockButton.h; sourceTree = "<group>"; };
+		3A7C9D79189EEA3200E6D517 /* DUIBlockButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIBlockButton.m; sourceTree = "<group>"; };
+		3A7C9D7A189EEA3200E6D517 /* DUIConstraintFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIConstraintFactory.h; sourceTree = "<group>"; };
+		3A7C9D7B189EEA3200E6D517 /* DUIConstraintFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIConstraintFactory.m; sourceTree = "<group>"; };
+		3A7C9D7C189EEA3200E6D517 /* DUIModalActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIModalActivityView.h; sourceTree = "<group>"; };
+		3A7C9D7D189EEA3200E6D517 /* DUIModalActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIModalActivityView.m; sourceTree = "<group>"; };
+		3A7C9D7E189EEA3200E6D517 /* UITableView+MultipleSelectionEnhacements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+MultipleSelectionEnhacements.h"; sourceTree = "<group>"; };
+		3A7C9D7F189EEA3200E6D517 /* UITableView+MultipleSelectionEnhacements.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+MultipleSelectionEnhacements.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +153,7 @@
 		3A5F25E2189EA5CF00C9ADB0 /* Testbed */ = {
 			isa = PBXGroup;
 			children = (
-				3A7C9D3B189EDB6C00E6D517 /* Classes */,
+				3A7C9D63189EEA3200E6D517 /* Classes */,
 				3A5F25EB189EA5CF00C9ADB0 /* DUITestbedAppDelegate.h */,
 				3A5F25EC189EA5CF00C9ADB0 /* DUITestbedAppDelegate.m */,
 				3A5F2631189EAC3200C9ADB0 /* DUITestbedViewController.h */,
@@ -194,38 +194,54 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3A7C9D3B189EDB6C00E6D517 /* Classes */ = {
+		3A7C9D63189EEA3200E6D517 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3A7C9D3C189EDB6C00E6D517 /* DUIActivityIndicatorItem.h */,
-				3A7C9D3D189EDB6C00E6D517 /* DUIActivityIndicatorItem.m */,
-				3A7C9D3E189EDB6C00E6D517 /* DUIBlockActionSheet.h */,
-				3A7C9D3F189EDB6C00E6D517 /* DUIBlockActionSheet.m */,
-				3A7C9D40189EDB6C00E6D517 /* DUIBlockAlertView.h */,
-				3A7C9D41189EDB6C00E6D517 /* DUIBlockAlertView.m */,
-				3A7C9D42189EDB6C00E6D517 /* DUIBlockButton.h */,
-				3A7C9D43189EDB6C00E6D517 /* DUIBlockButton.m */,
-				3A7C9D44189EDB6C00E6D517 /* DUIBlockDispatcher.h */,
-				3A7C9D45189EDB6C00E6D517 /* DUIBlockDispatcher.m */,
-				3A7C9D46189EDB6C00E6D517 /* DUIConstraintFactory.h */,
-				3A7C9D47189EDB6C00E6D517 /* DUIConstraintFactory.m */,
-				3A7C9D48189EDB6C00E6D517 /* DUIFastOneWayProxy.h */,
-				3A7C9D49189EDB6C00E6D517 /* DUIFastOneWayProxy.m */,
-				3A7C9D4A189EDB6C00E6D517 /* DUIModalActivityView.h */,
-				3A7C9D4B189EDB6C00E6D517 /* DUIModalActivityView.m */,
-				3A7C9D4C189EDB6C00E6D517 /* DUIObjectProxy.h */,
-				3A7C9D4D189EDB6C00E6D517 /* DUIObjectProxy.m */,
-				3A7C9D4E189EDB6C00E6D517 /* NSArray+IterateTrees.h */,
-				3A7C9D4F189EDB6C00E6D517 /* NSArray+IterateTrees.m */,
-				3A7C9D50189EDB6C00E6D517 /* NSObject+MultipleDelegatesSupport.h */,
-				3A7C9D51189EDB6C00E6D517 /* NSObject+MultipleDelegatesSupport.m */,
-				3A7C9D52189EDB6C00E6D517 /* NSObject+PerformBlock.h */,
-				3A7C9D53189EDB6C00E6D517 /* NSObject+PerformBlock.m */,
-				3A7C9D54189EDB6C00E6D517 /* UITableView+MultipleSelectionEnhacements.h */,
-				3A7C9D55189EDB6C00E6D517 /* UITableView+MultipleSelectionEnhacements.m */,
+				3A7C9D64189EEA3200E6D517 /* FoundationPlus */,
+				3A7C9D71189EEA3200E6D517 /* UIKitPlus */,
 			);
 			name = Classes;
 			path = ../../Classes;
+			sourceTree = "<group>";
+		};
+		3A7C9D64189EEA3200E6D517 /* FoundationPlus */ = {
+			isa = PBXGroup;
+			children = (
+				3A7C9D65189EEA3200E6D517 /* DUIBlockDispatcher.h */,
+				3A7C9D66189EEA3200E6D517 /* DUIBlockDispatcher.m */,
+				3A7C9D67189EEA3200E6D517 /* DUIFastOneWayProxy.h */,
+				3A7C9D68189EEA3200E6D517 /* DUIFastOneWayProxy.m */,
+				3A7C9D69189EEA3200E6D517 /* DUIObjectProxy.h */,
+				3A7C9D6A189EEA3200E6D517 /* DUIObjectProxy.m */,
+				3A7C9D6B189EEA3200E6D517 /* NSArray+IterateTrees.h */,
+				3A7C9D6C189EEA3200E6D517 /* NSArray+IterateTrees.m */,
+				3A7C9D6D189EEA3200E6D517 /* NSObject+MultipleDelegatesSupport.h */,
+				3A7C9D6E189EEA3200E6D517 /* NSObject+MultipleDelegatesSupport.m */,
+				3A7C9D6F189EEA3200E6D517 /* NSObject+PerformBlock.h */,
+				3A7C9D70189EEA3200E6D517 /* NSObject+PerformBlock.m */,
+			);
+			path = FoundationPlus;
+			sourceTree = "<group>";
+		};
+		3A7C9D71189EEA3200E6D517 /* UIKitPlus */ = {
+			isa = PBXGroup;
+			children = (
+				3A7C9D72189EEA3200E6D517 /* DUIActivityIndicatorItem.h */,
+				3A7C9D73189EEA3200E6D517 /* DUIActivityIndicatorItem.m */,
+				3A7C9D74189EEA3200E6D517 /* DUIBlockActionSheet.h */,
+				3A7C9D75189EEA3200E6D517 /* DUIBlockActionSheet.m */,
+				3A7C9D76189EEA3200E6D517 /* DUIBlockAlertView.h */,
+				3A7C9D77189EEA3200E6D517 /* DUIBlockAlertView.m */,
+				3A7C9D78189EEA3200E6D517 /* DUIBlockButton.h */,
+				3A7C9D79189EEA3200E6D517 /* DUIBlockButton.m */,
+				3A7C9D7A189EEA3200E6D517 /* DUIConstraintFactory.h */,
+				3A7C9D7B189EEA3200E6D517 /* DUIConstraintFactory.m */,
+				3A7C9D7C189EEA3200E6D517 /* DUIModalActivityView.h */,
+				3A7C9D7D189EEA3200E6D517 /* DUIModalActivityView.m */,
+				3A7C9D7E189EEA3200E6D517 /* UITableView+MultipleSelectionEnhacements.h */,
+				3A7C9D7F189EEA3200E6D517 /* UITableView+MultipleSelectionEnhacements.m */,
+			);
+			path = UIKitPlus;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,22 +341,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A7C9D5C189EDB6C00E6D517 /* DUIFastOneWayProxy.m in Sources */,
-				3A7C9D61189EDB6C00E6D517 /* NSObject+PerformBlock.m in Sources */,
-				3A7C9D5B189EDB6C00E6D517 /* DUIConstraintFactory.m in Sources */,
-				3A7C9D56189EDB6C00E6D517 /* DUIActivityIndicatorItem.m in Sources */,
+				3A7C9D84189EEA3200E6D517 /* NSObject+MultipleDelegatesSupport.m in Sources */,
+				3A7C9D83189EEA3200E6D517 /* NSArray+IterateTrees.m in Sources */,
+				3A7C9D8A189EEA3200E6D517 /* DUIConstraintFactory.m in Sources */,
+				3A7C9D88189EEA3200E6D517 /* DUIBlockAlertView.m in Sources */,
+				3A7C9D81189EEA3200E6D517 /* DUIFastOneWayProxy.m in Sources */,
 				3A5F25E9189EA5CF00C9ADB0 /* main.m in Sources */,
-				3A7C9D5D189EDB6C00E6D517 /* DUIModalActivityView.m in Sources */,
-				3A7C9D58189EDB6C00E6D517 /* DUIBlockAlertView.m in Sources */,
-				3A7C9D5A189EDB6C00E6D517 /* DUIBlockDispatcher.m in Sources */,
-				3A7C9D57189EDB6C00E6D517 /* DUIBlockActionSheet.m in Sources */,
-				3A7C9D60189EDB6C00E6D517 /* NSObject+MultipleDelegatesSupport.m in Sources */,
 				3A5F2633189EAC3200C9ADB0 /* DUITestbedViewController.m in Sources */,
 				3A5F25ED189EA5CF00C9ADB0 /* DUITestbedAppDelegate.m in Sources */,
-				3A7C9D5E189EDB6C00E6D517 /* DUIObjectProxy.m in Sources */,
-				3A7C9D5F189EDB6C00E6D517 /* NSArray+IterateTrees.m in Sources */,
-				3A7C9D62189EDB6C00E6D517 /* UITableView+MultipleSelectionEnhacements.m in Sources */,
-				3A7C9D59189EDB6C00E6D517 /* DUIBlockButton.m in Sources */,
+				3A7C9D87189EEA3200E6D517 /* DUIBlockActionSheet.m in Sources */,
+				3A7C9D82189EEA3200E6D517 /* DUIObjectProxy.m in Sources */,
+				3A7C9D85189EEA3200E6D517 /* NSObject+PerformBlock.m in Sources */,
+				3A7C9D89189EEA3200E6D517 /* DUIBlockButton.m in Sources */,
+				3A7C9D86189EEA3200E6D517 /* DUIActivityIndicatorItem.m in Sources */,
+				3A7C9D8B189EEA3200E6D517 /* DUIModalActivityView.m in Sources */,
+				3A7C9D8C189EEA3200E6D517 /* UITableView+MultipleSelectionEnhacements.m in Sources */,
+				3A7C9D80189EEA3200E6D517 /* DUIBlockDispatcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
