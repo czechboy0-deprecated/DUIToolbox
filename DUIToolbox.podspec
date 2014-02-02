@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "DUIToolbox"
-  s.version      = "0.1.1"
+  s.version      = "0.2.0"
   s.summary      = "The DUIToolbox is a mini library of classes useful for iOS UIKit developers."
   s.homepage     = "https://github.com/czechboy0/DUIToolbox"
   s.license      = 'MIT'
@@ -12,9 +12,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '6.0'
   s.requires_arc = true
 
-  s.source_files = 'Classes/ios'
+  s.source_files = 'Classes'
 
-  s.ios.exclude_files = 'Classes/osx'
-  s.public_header_files = 'Classes/**/*.h'
+  s.public_header_files = 'Classes/*.h'
   s.frameworks = 'UIKit', 'Foundation'
 end

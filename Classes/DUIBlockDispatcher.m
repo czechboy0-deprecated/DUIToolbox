@@ -27,11 +27,13 @@
 #pragma mark - Instance Methods
 
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-- (void) performBlock:(DUIBlockDispatcherBlockType)block
+- (void) dispatchBlock:(DUIBlockDispatcherBlockType)block
            afterDelay:(NSTimeInterval)delay
               onQueue:(NSOperationQueue *)queue
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 {
+    NSAssert(block, @"Block must not be nil.");
+    
     @synchronized (self.blocksToPerform) {
         NSString * uuid = [[NSUUID UUID] UUIDString];
         self.blocksToPerform[uuid] = @{@"queue": (queue ?: [NSOperationQueue currentQueue]),
@@ -41,21 +43,21 @@
 }
 
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-- (void) performBlock:(DUIBlockDispatcherBlockType)block
+- (void) dispatchBlock:(DUIBlockDispatcherBlockType)block
            afterDelay:(NSTimeInterval)delay
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 {
-    [self performBlock:block
+    [self dispatchBlock:block
             afterDelay:delay
                onQueue:nil];
 }
 
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-- (void) performBlock:(DUIBlockDispatcherBlockType)block
+- (void) dispatchBlock:(DUIBlockDispatcherBlockType)block
               onQueue:(NSOperationQueue *)queue
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 {
-    [self performBlock:block
+    [self dispatchBlock:block
             afterDelay:0.0
                onQueue:queue];
 }

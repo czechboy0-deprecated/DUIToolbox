@@ -16,27 +16,33 @@ typedef void (^DUIBlockDispatcherBlockType)(void);
  block will be executed, but the time when it's added to the
  target queue. These two times can differ depending on the
  queue.
+ The dispatcher is thread safe and supports adding multiple
+ blocks from multiple threads.
  */
 @interface DUIBlockDispatcher : NSObject
 
 + (instancetype) blockDispatcher;
 
 /**
- Performs the specified block after delay on the caller's queue.
+ Dispatches the specified block after delay on the caller's queue.
  */
-- (void) performBlock:(DUIBlockDispatcherBlockType)block
-           afterDelay:(NSTimeInterval)delay;
+- (void) dispatchBlock:(DUIBlockDispatcherBlockType)block
+            afterDelay:(NSTimeInterval)delay;
 
 /**
- Performs the specified block on the specified queue.
+ Dispatches the specified block on the specified queue.
  */
-- (void) performBlock:(DUIBlockDispatcherBlockType)block
-              onQueue:(NSOperationQueue *)queue;
+- (void) dispatchBlock:(DUIBlockDispatcherBlockType)block
+               onQueue:(NSOperationQueue *)queue;
 
 /**
- Performs the specified block after delay on the specified queue.
+ Dispatches the specified block after delay on the specified queue.
+ @param block A block of work passed in. Must not be nil.
+ @param delay Delay between now and when the block is placed on the specified queue.
+ @param queue Operation queue on which the block should be placed after delay. If nil,
+ the current queue (the caller's queue) is used.
  */
-- (void) performBlock:(DUIBlockDispatcherBlockType)block
-           afterDelay:(NSTimeInterval)delay
-              onQueue:(NSOperationQueue *)queue;
+- (void) dispatchBlock:(DUIBlockDispatcherBlockType)block
+            afterDelay:(NSTimeInterval)delay
+               onQueue:(NSOperationQueue *)queue;
 @end

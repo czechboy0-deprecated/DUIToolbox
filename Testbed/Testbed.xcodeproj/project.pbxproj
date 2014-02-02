@@ -19,22 +19,21 @@
 		3A5F25F8189EA5CF00C9ADB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5F25E0189EA5CF00C9ADB0 /* UIKit.framework */; };
 		3A5F2600189EA5CF00C9ADB0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A5F25FE189EA5CF00C9ADB0 /* InfoPlist.strings */; };
 		3A5F2602189EA5CF00C9ADB0 /* TestbedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5F2601189EA5CF00C9ADB0 /* TestbedTests.m */; };
-		3A5F2621189EA63200C9ADB0 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 3A5F260C189EA63200C9ADB0 /* .gitkeep */; };
-		3A5F2622189EA63200C9ADB0 /* DUIActivityIndicatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5F260E189EA63200C9ADB0 /* DUIActivityIndicatorItem.m */; };
-		3A5F2623189EA63200C9ADB0 /* DUIBlockActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5F2610189EA63200C9ADB0 /* DUIBlockActionSheet.m */; };
-		3A5F2624189EA63200C9ADB0 /* DUIBlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5F2612189EA63200C9ADB0 /* DUIBlockAlertView.m */; };
-		3A5F2625189EA63200C9ADB0 /* DUIConstraintFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5F2614189EA63200C9ADB0 /* DUIConstraintFactory.m */; };
-		3A5F2626189EA63200C9ADB0 /* DUIFastOneWayProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5F2616189EA63200C9ADB0 /* DUIFastOneWayProxy.m */; };
-		3A5F2627189EA63200C9ADB0 /* DUIModalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5F2618189EA63200C9ADB0 /* DUIModalActivityView.m */; };
-		3A5F2628189EA63200C9ADB0 /* DUIObjectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5F261A189EA63200C9ADB0 /* DUIObjectProxy.m */; };
-		3A5F2629189EA63200C9ADB0 /* NSArray+IterateTrees.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5F261C189EA63200C9ADB0 /* NSArray+IterateTrees.m */; };
-		3A5F262A189EA63200C9ADB0 /* NSObject+MultipleDelegatesSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5F261E189EA63200C9ADB0 /* NSObject+MultipleDelegatesSupport.m */; };
-		3A5F262B189EA63200C9ADB0 /* UITableView+MultipleSelectionEnhacements.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5F2620189EA63200C9ADB0 /* UITableView+MultipleSelectionEnhacements.m */; };
-		3A5F262E189EA69600C9ADB0 /* DUIBlockButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5F262D189EA69600C9ADB0 /* DUIBlockButton.m */; };
 		3A5F2630189EAC1800C9ADB0 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5F262F189EAC1800C9ADB0 /* Storyboard.storyboard */; };
 		3A5F2633189EAC3200C9ADB0 /* DUITestbedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5F2632189EAC3200C9ADB0 /* DUITestbedViewController.m */; };
-		3A5F265F189EBEE000C9ADB0 /* DUIBlockDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5F265E189EBEE000C9ADB0 /* DUIBlockDispatcher.m */; };
-		3A5F2662189EC94100C9ADB0 /* NSObject+PerformBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5F2661189EC94100C9ADB0 /* NSObject+PerformBlock.m */; };
+		3A7C9D56189EDB6C00E6D517 /* DUIActivityIndicatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D3D189EDB6C00E6D517 /* DUIActivityIndicatorItem.m */; };
+		3A7C9D57189EDB6C00E6D517 /* DUIBlockActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D3F189EDB6C00E6D517 /* DUIBlockActionSheet.m */; };
+		3A7C9D58189EDB6C00E6D517 /* DUIBlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D41189EDB6C00E6D517 /* DUIBlockAlertView.m */; };
+		3A7C9D59189EDB6C00E6D517 /* DUIBlockButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D43189EDB6C00E6D517 /* DUIBlockButton.m */; };
+		3A7C9D5A189EDB6C00E6D517 /* DUIBlockDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D45189EDB6C00E6D517 /* DUIBlockDispatcher.m */; };
+		3A7C9D5B189EDB6C00E6D517 /* DUIConstraintFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D47189EDB6C00E6D517 /* DUIConstraintFactory.m */; };
+		3A7C9D5C189EDB6C00E6D517 /* DUIFastOneWayProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D49189EDB6C00E6D517 /* DUIFastOneWayProxy.m */; };
+		3A7C9D5D189EDB6C00E6D517 /* DUIModalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D4B189EDB6C00E6D517 /* DUIModalActivityView.m */; };
+		3A7C9D5E189EDB6C00E6D517 /* DUIObjectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D4D189EDB6C00E6D517 /* DUIObjectProxy.m */; };
+		3A7C9D5F189EDB6C00E6D517 /* NSArray+IterateTrees.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D4F189EDB6C00E6D517 /* NSArray+IterateTrees.m */; };
+		3A7C9D60189EDB6C00E6D517 /* NSObject+MultipleDelegatesSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D51189EDB6C00E6D517 /* NSObject+MultipleDelegatesSupport.m */; };
+		3A7C9D61189EDB6C00E6D517 /* NSObject+PerformBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D53189EDB6C00E6D517 /* NSObject+PerformBlock.m */; };
+		3A7C9D62189EDB6C00E6D517 /* UITableView+MultipleSelectionEnhacements.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D55189EDB6C00E6D517 /* UITableView+MultipleSelectionEnhacements.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,37 +63,36 @@
 		3A5F25FD189EA5CF00C9ADB0 /* TestbedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestbedTests-Info.plist"; sourceTree = "<group>"; };
 		3A5F25FF189EA5CF00C9ADB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3A5F2601189EA5CF00C9ADB0 /* TestbedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestbedTests.m; sourceTree = "<group>"; };
-		3A5F260C189EA63200C9ADB0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		3A5F260D189EA63200C9ADB0 /* DUIActivityIndicatorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIActivityIndicatorItem.h; sourceTree = "<group>"; };
-		3A5F260E189EA63200C9ADB0 /* DUIActivityIndicatorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIActivityIndicatorItem.m; sourceTree = "<group>"; };
-		3A5F260F189EA63200C9ADB0 /* DUIBlockActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIBlockActionSheet.h; sourceTree = "<group>"; };
-		3A5F2610189EA63200C9ADB0 /* DUIBlockActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIBlockActionSheet.m; sourceTree = "<group>"; };
-		3A5F2611189EA63200C9ADB0 /* DUIBlockAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIBlockAlertView.h; sourceTree = "<group>"; };
-		3A5F2612189EA63200C9ADB0 /* DUIBlockAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIBlockAlertView.m; sourceTree = "<group>"; };
-		3A5F2613189EA63200C9ADB0 /* DUIConstraintFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIConstraintFactory.h; sourceTree = "<group>"; };
-		3A5F2614189EA63200C9ADB0 /* DUIConstraintFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIConstraintFactory.m; sourceTree = "<group>"; };
-		3A5F2615189EA63200C9ADB0 /* DUIFastOneWayProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIFastOneWayProxy.h; sourceTree = "<group>"; };
-		3A5F2616189EA63200C9ADB0 /* DUIFastOneWayProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIFastOneWayProxy.m; sourceTree = "<group>"; };
-		3A5F2617189EA63200C9ADB0 /* DUIModalActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIModalActivityView.h; sourceTree = "<group>"; };
-		3A5F2618189EA63200C9ADB0 /* DUIModalActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIModalActivityView.m; sourceTree = "<group>"; };
-		3A5F2619189EA63200C9ADB0 /* DUIObjectProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIObjectProxy.h; sourceTree = "<group>"; };
-		3A5F261A189EA63200C9ADB0 /* DUIObjectProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIObjectProxy.m; sourceTree = "<group>"; };
-		3A5F261B189EA63200C9ADB0 /* NSArray+IterateTrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+IterateTrees.h"; sourceTree = "<group>"; };
-		3A5F261C189EA63200C9ADB0 /* NSArray+IterateTrees.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+IterateTrees.m"; sourceTree = "<group>"; };
-		3A5F261D189EA63200C9ADB0 /* NSObject+MultipleDelegatesSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MultipleDelegatesSupport.h"; sourceTree = "<group>"; };
-		3A5F261E189EA63200C9ADB0 /* NSObject+MultipleDelegatesSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MultipleDelegatesSupport.m"; sourceTree = "<group>"; };
-		3A5F261F189EA63200C9ADB0 /* UITableView+MultipleSelectionEnhacements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+MultipleSelectionEnhacements.h"; sourceTree = "<group>"; };
-		3A5F2620189EA63200C9ADB0 /* UITableView+MultipleSelectionEnhacements.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+MultipleSelectionEnhacements.m"; sourceTree = "<group>"; };
-		3A5F262C189EA69600C9ADB0 /* DUIBlockButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIBlockButton.h; sourceTree = "<group>"; };
-		3A5F262D189EA69600C9ADB0 /* DUIBlockButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIBlockButton.m; sourceTree = "<group>"; };
 		3A5F262F189EAC1800C9ADB0 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		3A5F2631189EAC3200C9ADB0 /* DUITestbedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUITestbedViewController.h; sourceTree = "<group>"; };
 		3A5F2632189EAC3200C9ADB0 /* DUITestbedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUITestbedViewController.m; sourceTree = "<group>"; };
 		3A5F2634189EB4B800C9ADB0 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "../../../../../../Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework"; sourceTree = "<group>"; };
-		3A5F265D189EBEE000C9ADB0 /* DUIBlockDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIBlockDispatcher.h; sourceTree = "<group>"; };
-		3A5F265E189EBEE000C9ADB0 /* DUIBlockDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIBlockDispatcher.m; sourceTree = "<group>"; };
-		3A5F2660189EC94100C9ADB0 /* NSObject+PerformBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PerformBlock.h"; sourceTree = "<group>"; };
-		3A5F2661189EC94100C9ADB0 /* NSObject+PerformBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PerformBlock.m"; sourceTree = "<group>"; };
+		3A7C9D3C189EDB6C00E6D517 /* DUIActivityIndicatorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIActivityIndicatorItem.h; sourceTree = "<group>"; };
+		3A7C9D3D189EDB6C00E6D517 /* DUIActivityIndicatorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIActivityIndicatorItem.m; sourceTree = "<group>"; };
+		3A7C9D3E189EDB6C00E6D517 /* DUIBlockActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIBlockActionSheet.h; sourceTree = "<group>"; };
+		3A7C9D3F189EDB6C00E6D517 /* DUIBlockActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIBlockActionSheet.m; sourceTree = "<group>"; };
+		3A7C9D40189EDB6C00E6D517 /* DUIBlockAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIBlockAlertView.h; sourceTree = "<group>"; };
+		3A7C9D41189EDB6C00E6D517 /* DUIBlockAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIBlockAlertView.m; sourceTree = "<group>"; };
+		3A7C9D42189EDB6C00E6D517 /* DUIBlockButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIBlockButton.h; sourceTree = "<group>"; };
+		3A7C9D43189EDB6C00E6D517 /* DUIBlockButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIBlockButton.m; sourceTree = "<group>"; };
+		3A7C9D44189EDB6C00E6D517 /* DUIBlockDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIBlockDispatcher.h; sourceTree = "<group>"; };
+		3A7C9D45189EDB6C00E6D517 /* DUIBlockDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIBlockDispatcher.m; sourceTree = "<group>"; };
+		3A7C9D46189EDB6C00E6D517 /* DUIConstraintFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIConstraintFactory.h; sourceTree = "<group>"; };
+		3A7C9D47189EDB6C00E6D517 /* DUIConstraintFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIConstraintFactory.m; sourceTree = "<group>"; };
+		3A7C9D48189EDB6C00E6D517 /* DUIFastOneWayProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIFastOneWayProxy.h; sourceTree = "<group>"; };
+		3A7C9D49189EDB6C00E6D517 /* DUIFastOneWayProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIFastOneWayProxy.m; sourceTree = "<group>"; };
+		3A7C9D4A189EDB6C00E6D517 /* DUIModalActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIModalActivityView.h; sourceTree = "<group>"; };
+		3A7C9D4B189EDB6C00E6D517 /* DUIModalActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIModalActivityView.m; sourceTree = "<group>"; };
+		3A7C9D4C189EDB6C00E6D517 /* DUIObjectProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIObjectProxy.h; sourceTree = "<group>"; };
+		3A7C9D4D189EDB6C00E6D517 /* DUIObjectProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIObjectProxy.m; sourceTree = "<group>"; };
+		3A7C9D4E189EDB6C00E6D517 /* NSArray+IterateTrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+IterateTrees.h"; sourceTree = "<group>"; };
+		3A7C9D4F189EDB6C00E6D517 /* NSArray+IterateTrees.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+IterateTrees.m"; sourceTree = "<group>"; };
+		3A7C9D50189EDB6C00E6D517 /* NSObject+MultipleDelegatesSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MultipleDelegatesSupport.h"; sourceTree = "<group>"; };
+		3A7C9D51189EDB6C00E6D517 /* NSObject+MultipleDelegatesSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MultipleDelegatesSupport.m"; sourceTree = "<group>"; };
+		3A7C9D52189EDB6C00E6D517 /* NSObject+PerformBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PerformBlock.h"; sourceTree = "<group>"; };
+		3A7C9D53189EDB6C00E6D517 /* NSObject+PerformBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PerformBlock.m"; sourceTree = "<group>"; };
+		3A7C9D54189EDB6C00E6D517 /* UITableView+MultipleSelectionEnhacements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+MultipleSelectionEnhacements.h"; sourceTree = "<group>"; };
+		3A7C9D55189EDB6C00E6D517 /* UITableView+MultipleSelectionEnhacements.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+MultipleSelectionEnhacements.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +153,7 @@
 		3A5F25E2189EA5CF00C9ADB0 /* Testbed */ = {
 			isa = PBXGroup;
 			children = (
-				3A5F260B189EA63200C9ADB0 /* ios */,
+				3A7C9D3B189EDB6C00E6D517 /* Classes */,
 				3A5F25EB189EA5CF00C9ADB0 /* DUITestbedAppDelegate.h */,
 				3A5F25EC189EA5CF00C9ADB0 /* DUITestbedAppDelegate.m */,
 				3A5F2631189EAC3200C9ADB0 /* DUITestbedViewController.h */,
@@ -196,39 +194,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3A5F260B189EA63200C9ADB0 /* ios */ = {
+		3A7C9D3B189EDB6C00E6D517 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3A5F260C189EA63200C9ADB0 /* .gitkeep */,
-				3A5F260D189EA63200C9ADB0 /* DUIActivityIndicatorItem.h */,
-				3A5F260E189EA63200C9ADB0 /* DUIActivityIndicatorItem.m */,
-				3A5F260F189EA63200C9ADB0 /* DUIBlockActionSheet.h */,
-				3A5F2610189EA63200C9ADB0 /* DUIBlockActionSheet.m */,
-				3A5F2611189EA63200C9ADB0 /* DUIBlockAlertView.h */,
-				3A5F2612189EA63200C9ADB0 /* DUIBlockAlertView.m */,
-				3A5F262C189EA69600C9ADB0 /* DUIBlockButton.h */,
-				3A5F262D189EA69600C9ADB0 /* DUIBlockButton.m */,
-				3A5F265D189EBEE000C9ADB0 /* DUIBlockDispatcher.h */,
-				3A5F265E189EBEE000C9ADB0 /* DUIBlockDispatcher.m */,
-				3A5F2613189EA63200C9ADB0 /* DUIConstraintFactory.h */,
-				3A5F2614189EA63200C9ADB0 /* DUIConstraintFactory.m */,
-				3A5F2615189EA63200C9ADB0 /* DUIFastOneWayProxy.h */,
-				3A5F2616189EA63200C9ADB0 /* DUIFastOneWayProxy.m */,
-				3A5F2617189EA63200C9ADB0 /* DUIModalActivityView.h */,
-				3A5F2618189EA63200C9ADB0 /* DUIModalActivityView.m */,
-				3A5F2619189EA63200C9ADB0 /* DUIObjectProxy.h */,
-				3A5F261A189EA63200C9ADB0 /* DUIObjectProxy.m */,
-				3A5F261B189EA63200C9ADB0 /* NSArray+IterateTrees.h */,
-				3A5F261C189EA63200C9ADB0 /* NSArray+IterateTrees.m */,
-				3A5F261D189EA63200C9ADB0 /* NSObject+MultipleDelegatesSupport.h */,
-				3A5F261E189EA63200C9ADB0 /* NSObject+MultipleDelegatesSupport.m */,
-				3A5F2660189EC94100C9ADB0 /* NSObject+PerformBlock.h */,
-				3A5F2661189EC94100C9ADB0 /* NSObject+PerformBlock.m */,
-				3A5F261F189EA63200C9ADB0 /* UITableView+MultipleSelectionEnhacements.h */,
-				3A5F2620189EA63200C9ADB0 /* UITableView+MultipleSelectionEnhacements.m */,
+				3A7C9D3C189EDB6C00E6D517 /* DUIActivityIndicatorItem.h */,
+				3A7C9D3D189EDB6C00E6D517 /* DUIActivityIndicatorItem.m */,
+				3A7C9D3E189EDB6C00E6D517 /* DUIBlockActionSheet.h */,
+				3A7C9D3F189EDB6C00E6D517 /* DUIBlockActionSheet.m */,
+				3A7C9D40189EDB6C00E6D517 /* DUIBlockAlertView.h */,
+				3A7C9D41189EDB6C00E6D517 /* DUIBlockAlertView.m */,
+				3A7C9D42189EDB6C00E6D517 /* DUIBlockButton.h */,
+				3A7C9D43189EDB6C00E6D517 /* DUIBlockButton.m */,
+				3A7C9D44189EDB6C00E6D517 /* DUIBlockDispatcher.h */,
+				3A7C9D45189EDB6C00E6D517 /* DUIBlockDispatcher.m */,
+				3A7C9D46189EDB6C00E6D517 /* DUIConstraintFactory.h */,
+				3A7C9D47189EDB6C00E6D517 /* DUIConstraintFactory.m */,
+				3A7C9D48189EDB6C00E6D517 /* DUIFastOneWayProxy.h */,
+				3A7C9D49189EDB6C00E6D517 /* DUIFastOneWayProxy.m */,
+				3A7C9D4A189EDB6C00E6D517 /* DUIModalActivityView.h */,
+				3A7C9D4B189EDB6C00E6D517 /* DUIModalActivityView.m */,
+				3A7C9D4C189EDB6C00E6D517 /* DUIObjectProxy.h */,
+				3A7C9D4D189EDB6C00E6D517 /* DUIObjectProxy.m */,
+				3A7C9D4E189EDB6C00E6D517 /* NSArray+IterateTrees.h */,
+				3A7C9D4F189EDB6C00E6D517 /* NSArray+IterateTrees.m */,
+				3A7C9D50189EDB6C00E6D517 /* NSObject+MultipleDelegatesSupport.h */,
+				3A7C9D51189EDB6C00E6D517 /* NSObject+MultipleDelegatesSupport.m */,
+				3A7C9D52189EDB6C00E6D517 /* NSObject+PerformBlock.h */,
+				3A7C9D53189EDB6C00E6D517 /* NSObject+PerformBlock.m */,
+				3A7C9D54189EDB6C00E6D517 /* UITableView+MultipleSelectionEnhacements.h */,
+				3A7C9D55189EDB6C00E6D517 /* UITableView+MultipleSelectionEnhacements.m */,
 			);
-			name = ios;
-			path = ../../../Classes/ios;
+			name = Classes;
+			path = ../../Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,7 +304,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A5F2621189EA63200C9ADB0 /* .gitkeep in Resources */,
 				3A5F2630189EAC1800C9ADB0 /* Storyboard.storyboard in Resources */,
 				3A5F25E7189EA5CF00C9ADB0 /* InfoPlist.strings in Resources */,
 				3A5F25EF189EA5CF00C9ADB0 /* Images.xcassets in Resources */,
@@ -329,22 +325,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A5F2627189EA63200C9ADB0 /* DUIModalActivityView.m in Sources */,
-				3A5F2625189EA63200C9ADB0 /* DUIConstraintFactory.m in Sources */,
-				3A5F265F189EBEE000C9ADB0 /* DUIBlockDispatcher.m in Sources */,
-				3A5F262B189EA63200C9ADB0 /* UITableView+MultipleSelectionEnhacements.m in Sources */,
-				3A5F2623189EA63200C9ADB0 /* DUIBlockActionSheet.m in Sources */,
+				3A7C9D5C189EDB6C00E6D517 /* DUIFastOneWayProxy.m in Sources */,
+				3A7C9D61189EDB6C00E6D517 /* NSObject+PerformBlock.m in Sources */,
+				3A7C9D5B189EDB6C00E6D517 /* DUIConstraintFactory.m in Sources */,
+				3A7C9D56189EDB6C00E6D517 /* DUIActivityIndicatorItem.m in Sources */,
 				3A5F25E9189EA5CF00C9ADB0 /* main.m in Sources */,
+				3A7C9D5D189EDB6C00E6D517 /* DUIModalActivityView.m in Sources */,
+				3A7C9D58189EDB6C00E6D517 /* DUIBlockAlertView.m in Sources */,
+				3A7C9D5A189EDB6C00E6D517 /* DUIBlockDispatcher.m in Sources */,
+				3A7C9D57189EDB6C00E6D517 /* DUIBlockActionSheet.m in Sources */,
+				3A7C9D60189EDB6C00E6D517 /* NSObject+MultipleDelegatesSupport.m in Sources */,
 				3A5F2633189EAC3200C9ADB0 /* DUITestbedViewController.m in Sources */,
-				3A5F262A189EA63200C9ADB0 /* NSObject+MultipleDelegatesSupport.m in Sources */,
-				3A5F2622189EA63200C9ADB0 /* DUIActivityIndicatorItem.m in Sources */,
 				3A5F25ED189EA5CF00C9ADB0 /* DUITestbedAppDelegate.m in Sources */,
-				3A5F2626189EA63200C9ADB0 /* DUIFastOneWayProxy.m in Sources */,
-				3A5F2662189EC94100C9ADB0 /* NSObject+PerformBlock.m in Sources */,
-				3A5F2628189EA63200C9ADB0 /* DUIObjectProxy.m in Sources */,
-				3A5F262E189EA69600C9ADB0 /* DUIBlockButton.m in Sources */,
-				3A5F2624189EA63200C9ADB0 /* DUIBlockAlertView.m in Sources */,
-				3A5F2629189EA63200C9ADB0 /* NSArray+IterateTrees.m in Sources */,
+				3A7C9D5E189EDB6C00E6D517 /* DUIObjectProxy.m in Sources */,
+				3A7C9D5F189EDB6C00E6D517 /* NSArray+IterateTrees.m in Sources */,
+				3A7C9D62189EDB6C00E6D517 /* UITableView+MultipleSelectionEnhacements.m in Sources */,
+				3A7C9D59189EDB6C00E6D517 /* DUIBlockButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +554,7 @@
 				3A5F2607189EA5CF00C9ADB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A5F2608189EA5CF00C9ADB0 /* Build configuration list for PBXNativeTarget "TestbedTests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +563,7 @@
 				3A5F260A189EA5CF00C9ADB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

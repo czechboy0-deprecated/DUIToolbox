@@ -48,7 +48,7 @@
     
     DUIBlockDispatcher * dispatcher = [DUIBlockDispatcher blockDispatcher];
     
-    [dispatcher performBlock:^{
+    [dispatcher dispatchBlock:^{
         NSLog(@"Hello block");
     } afterDelay:2.0 onQueue:[NSOperationQueue mainQueue]];
     
