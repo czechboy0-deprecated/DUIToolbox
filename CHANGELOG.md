@@ -15,3 +15,7 @@ Lots of API changes, new classes added, fixed retaining blocks (by copying them)
 ## 0.2.1
 
 Subspecs added to separate Foundation and UIKit-focused classes.
+
+## 0.2.2
+
+More documentation.
