@@ -12,17 +12,16 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '6.0'
   s.requires_arc = true
 
-  s.source_files = 'Classes/**/*.{h,m}'
-  s.public_header_files = 'Classes/**/*.h'
-
   s.subspec 'UIKitPlus' do |ui|
-    ui.source_files = 'Classes/UIKitPlus/*.{h,m}'
+    ui.source_files = 'Classes/UIKitPlus/**/*.{h,m}'
     ui.frameworks = 'UIKit'
+    ui.public_header_files = 'Classes/UIKitPlus/**/*.{h}'
   end
 
   s.subspec 'FoundationPlus' do |ns|
     ns.source_files = 'Classes/FoundationPlus/*.{h,m}'
     ns.frameworks = 'Foundation'
+    ns.public_header_files = 'Classes/FoundationPlus/**/*.{h}'
   end
 
 end

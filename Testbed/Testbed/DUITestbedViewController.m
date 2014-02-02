@@ -43,17 +43,6 @@
         [button addConstraints:size];
         [button.superview addConstraints:center];
     }
-    
-    
-    
-    DUIBlockDispatcher * dispatcher = [DUIBlockDispatcher blockDispatcher];
-    
-    [dispatcher dispatchBlock:^{
-        NSLog(@"Hello block");
-    } afterDelay:2.0 onQueue:[NSOperationQueue mainQueue]];
-    
-    
-    
 }
 
 

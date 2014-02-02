@@ -18,7 +18,6 @@
 		3A5F25F7189EA5CF00C9ADB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5F25DC189EA5CF00C9ADB0 /* Foundation.framework */; };
 		3A5F25F8189EA5CF00C9ADB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5F25E0189EA5CF00C9ADB0 /* UIKit.framework */; };
 		3A5F2600189EA5CF00C9ADB0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A5F25FE189EA5CF00C9ADB0 /* InfoPlist.strings */; };
-		3A5F2602189EA5CF00C9ADB0 /* TestbedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5F2601189EA5CF00C9ADB0 /* TestbedTests.m */; };
 		3A5F2630189EAC1800C9ADB0 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5F262F189EAC1800C9ADB0 /* Storyboard.storyboard */; };
 		3A5F2633189EAC3200C9ADB0 /* DUITestbedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5F2632189EAC3200C9ADB0 /* DUITestbedViewController.m */; };
 		3A7C9D80189EEA3200E6D517 /* DUIBlockDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D66189EEA3200E6D517 /* DUIBlockDispatcher.m */; };
@@ -34,6 +33,7 @@
 		3A7C9D8A189EEA3200E6D517 /* DUIConstraintFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D7B189EEA3200E6D517 /* DUIConstraintFactory.m */; };
 		3A7C9D8B189EEA3200E6D517 /* DUIModalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D7D189EEA3200E6D517 /* DUIModalActivityView.m */; };
 		3A7C9D8C189EEA3200E6D517 /* UITableView+MultipleSelectionEnhacements.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D7F189EEA3200E6D517 /* UITableView+MultipleSelectionEnhacements.m */; };
+		3A7C9DC9189EF64500E6D517 /* DUIBlockDispatcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9DC8189EF64500E6D517 /* DUIBlockDispatcherTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +62,6 @@
 		3A5F25F5189EA5CF00C9ADB0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3A5F25FD189EA5CF00C9ADB0 /* TestbedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestbedTests-Info.plist"; sourceTree = "<group>"; };
 		3A5F25FF189EA5CF00C9ADB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3A5F2601189EA5CF00C9ADB0 /* TestbedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestbedTests.m; sourceTree = "<group>"; };
 		3A5F262F189EAC1800C9ADB0 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		3A5F2631189EAC3200C9ADB0 /* DUITestbedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUITestbedViewController.h; sourceTree = "<group>"; };
 		3A5F2632189EAC3200C9ADB0 /* DUITestbedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUITestbedViewController.m; sourceTree = "<group>"; };
@@ -93,6 +92,7 @@
 		3A7C9D7D189EEA3200E6D517 /* DUIModalActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIModalActivityView.m; sourceTree = "<group>"; };
 		3A7C9D7E189EEA3200E6D517 /* UITableView+MultipleSelectionEnhacements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+MultipleSelectionEnhacements.h"; sourceTree = "<group>"; };
 		3A7C9D7F189EEA3200E6D517 /* UITableView+MultipleSelectionEnhacements.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+MultipleSelectionEnhacements.m"; sourceTree = "<group>"; };
+		3A7C9DC8189EF64500E6D517 /* DUIBlockDispatcherTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIBlockDispatcherTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,7 +179,7 @@
 		3A5F25FB189EA5CF00C9ADB0 /* TestbedTests */ = {
 			isa = PBXGroup;
 			children = (
-				3A5F2601189EA5CF00C9ADB0 /* TestbedTests.m */,
+				3A7C9DC8189EF64500E6D517 /* DUIBlockDispatcherTests.m */,
 				3A5F25FC189EA5CF00C9ADB0 /* Supporting Files */,
 			);
 			path = TestbedTests;
@@ -364,7 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A5F2602189EA5CF00C9ADB0 /* TestbedTests.m in Sources */,
+				3A7C9DC9189EF64500E6D517 /* DUIBlockDispatcherTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
