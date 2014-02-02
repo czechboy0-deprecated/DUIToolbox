@@ -9,6 +9,8 @@
 
 @interface DUIActivityIndicatorItem : UIBarButtonItem
 
++ (instancetype) indicatorItemWithActivityStyle:(UIActivityIndicatorViewStyle)style;
+
 - (instancetype) initWithActivityStyle:(UIActivityIndicatorViewStyle)style;
 
 @property (nonatomic) BOOL animating;

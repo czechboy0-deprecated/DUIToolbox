@@ -46,8 +46,11 @@
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 {
     assert(item);
+    UIView * view = [self _convertAndStripOfAutoresizingMask:item];
+    assert(view);
+
     NSLayoutConstraint * constraint =
-    [NSLayoutConstraint constraintWithItem:item
+    [NSLayoutConstraint constraintWithItem:view
                                  attribute:NSLayoutAttributeHeight
                                  relatedBy:NSLayoutRelationEqual
                                     toItem:nil
@@ -62,9 +65,11 @@
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 {
     assert(item);
+    UIView * view = [self _convertAndStripOfAutoresizingMask:item];
+    assert(view);
     
     NSLayoutConstraint * constraint =
-    [NSLayoutConstraint constraintWithItem:item
+    [NSLayoutConstraint constraintWithItem:view
                                  attribute:NSLayoutAttributeWidth
                                  relatedBy:NSLayoutRelationEqual
                                     toItem:nil

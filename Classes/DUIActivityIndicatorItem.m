@@ -12,6 +12,13 @@
     UIActivityIndicatorView *_activityIndicator;
 }
 
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
++ (instancetype) indicatorItemWithActivityStyle:(UIActivityIndicatorViewStyle)style
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+{
+    return [[self alloc] initWithActivityIndicatorStyle:style];
+}
+
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 - (instancetype) initWithActivityStyle:(UIActivityIndicatorViewStyle)style
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*

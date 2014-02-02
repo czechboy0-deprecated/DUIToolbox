@@ -9,6 +9,21 @@
 
 @implementation DUIBlockAlertView
 
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
++ (instancetype) alertViewWithTitle:(NSString *)title
+                            message:(NSString *)message
+                       clickedBlock:(DUIBlockAlertViewClicked)clickedBlock
+                  cancelButtonTitle:(NSString *)cancelButtonTitle
+                  otherButtonTitles:(NSString *)otherButtonTitles, ...
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+{
+    return [[self alloc] initWithTitle:title
+                               message:message
+                          clickedBlock:clickedBlock
+                     cancelButtonTitle:cancelButtonTitle
+                     otherButtonTitles:otherButtonTitles, nil];
+}
+
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 - (instancetype) initWithTitle:(NSString *)title
                        message:(NSString *)message
@@ -23,7 +38,7 @@
                  cancelButtonTitle:cancelButtonTitle
                  otherButtonTitles:otherButtonTitles, nil]) {
         
-        _clickedBlock = clickedBlock;
+        _clickedBlock = [clickedBlock copy];
     
     }
     return self;

@@ -11,6 +11,8 @@
 
 @property (nonatomic, strong, readonly) UIActivityIndicatorView * activityIndicatorView;
 
++ (instancetype) modalActivityView;
+
 //sets hidden to no, also
 - (void)startAnimating;
 

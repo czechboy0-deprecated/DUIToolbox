@@ -9,6 +9,21 @@
 
 @implementation DUIBlockActionSheet
 
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
++ (instancetype) actionSheetWithTitle:(NSString *)title
+                         clickedBlock:(DUIBlockActionSheetClicked)clickedBlock
+                    cancelButtonTitle:(NSString *)cancelButtonTitle
+               destructiveButtonTitle:(NSString *)destructiveButtonTitle
+                    otherButtonTitles:(NSString *)otherButtonTitles, ...
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+{
+    return [[self alloc] initWithTitle:title
+                          clickedBlock:clickedBlock
+                     cancelButtonTitle:cancelButtonTitle
+                destructiveButtonTitle:destructiveButtonTitle
+                     otherButtonTitles:otherButtonTitles, nil];
+}
+
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 - (instancetype) initWithTitle:(NSString *)title
                   clickedBlock:(DUIBlockActionSheetClicked)clickedBlock
@@ -22,7 +37,7 @@
                   cancelButtonTitle:cancelButtonTitle
              destructiveButtonTitle:destructiveButtonTitle
                   otherButtonTitles:otherButtonTitles, nil]) {
-        _clickedBlock = clickedBlock;
+        _clickedBlock = [clickedBlock copy];
     }
     return self;
 }

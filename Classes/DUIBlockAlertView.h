@@ -13,12 +13,21 @@ typedef void(^DUIBlockAlertViewClicked)(DUIBlockAlertView * alertView, NSInteger
 
 @interface DUIBlockAlertView : UIAlertView<UIAlertViewDelegate>
 
+/**
+ Convinience class method.
+ */
++ (instancetype) alertViewWithTitle:(NSString *)title
+                            message:(NSString *)message
+                       clickedBlock:(DUIBlockAlertViewClicked)clickedBlock
+                  cancelButtonTitle:(NSString *)cancelButtonTitle
+                  otherButtonTitles:(NSString *)otherButtonTitles, ... NS_REQUIRES_NIL_TERMINATION;
+
 //designated initializer
 - (instancetype) initWithTitle:(NSString *)title
                        message:(NSString *)message
                   clickedBlock:(DUIBlockAlertViewClicked)clickedBlock
              cancelButtonTitle:(NSString *)cancelButtonTitle
-             otherButtonTitles:(NSString *)otherButtonTitles, ...;
+             otherButtonTitles:(NSString *)otherButtonTitles, ... NS_REQUIRES_NIL_TERMINATION;
 
 @property (nonatomic, copy, readonly) DUIBlockAlertViewClicked clickedBlock;
 
@@ -26,6 +35,6 @@ typedef void(^DUIBlockAlertViewClicked)(DUIBlockAlertView * alertView, NSInteger
 - (instancetype) initWithError:(NSError *)error
                   clickedBlock:(DUIBlockAlertViewClicked)clickedBlock
              cancelButtonTitle:(NSString *)cancelButtonTitle
-             otherButtonTitles:(NSString *)otherButtonTitles, ...;
+             otherButtonTitles:(NSString *)otherButtonTitles, ... NS_REQUIRES_NIL_TERMINATION;
 
 @end

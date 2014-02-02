@@ -13,12 +13,21 @@ typedef void(^DUIBlockActionSheetClicked)(DUIBlockActionSheet * actionSheet, NSI
 
 @interface DUIBlockActionSheet : UIActionSheet<UIActionSheetDelegate>
 
+/**
+ Convinience class method.
+ */
++ (instancetype) actionSheetWithTitle:(NSString *)title
+                         clickedBlock:(DUIBlockActionSheetClicked)clickedBlock
+                    cancelButtonTitle:(NSString *)cancelButtonTitle
+               destructiveButtonTitle:(NSString *)destructiveButtonTitle
+                    otherButtonTitles:(NSString *)otherButtonTitles, ... NS_REQUIRES_NIL_TERMINATION;
+
 //designated initializer
 - (instancetype) initWithTitle:(NSString *)title
                   clickedBlock:(DUIBlockActionSheetClicked)clickedBlock
              cancelButtonTitle:(NSString *)cancelButtonTitle
         destructiveButtonTitle:(NSString *)destructiveButtonTitle
-             otherButtonTitles:(NSString *)otherButtonTitles, ...;
+             otherButtonTitles:(NSString *)otherButtonTitles, ... NS_REQUIRES_NIL_TERMINATION;
 
 @property (nonatomic, copy, readonly) DUIBlockActionSheetClicked clickedBlock;
 
