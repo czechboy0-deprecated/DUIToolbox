@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "DUIToolbox"
-  s.version      = "0.2.0"
+  s.version      = "0.2.1"
   s.summary      = "The DUIToolbox is a mini library of classes useful for iOS UIKit developers."
   s.homepage     = "https://github.com/czechboy0/DUIToolbox"
   s.license      = 'MIT'
