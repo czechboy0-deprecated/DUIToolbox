@@ -34,6 +34,8 @@
 		3A7C9D8B189EEA3200E6D517 /* DUIModalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D7D189EEA3200E6D517 /* DUIModalActivityView.m */; };
 		3A7C9D8C189EEA3200E6D517 /* UITableView+MultipleSelectionEnhacements.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9D7F189EEA3200E6D517 /* UITableView+MultipleSelectionEnhacements.m */; };
 		3A7C9DC9189EF64500E6D517 /* DUIBlockDispatcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9DC8189EF64500E6D517 /* DUIBlockDispatcherTests.m */; };
+		3AF6713818CFCFD400E7FB4D /* DUIRuntimeTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF6713718CFCFD400E7FB4D /* DUIRuntimeTools.m */; };
+		3AF6713A18CFDC8F00E7FB4D /* DUIRuntimeToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF6713918CFDC8F00E7FB4D /* DUIRuntimeToolsTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,9 @@
 		3A7C9D7E189EEA3200E6D517 /* UITableView+MultipleSelectionEnhacements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+MultipleSelectionEnhacements.h"; sourceTree = "<group>"; };
 		3A7C9D7F189EEA3200E6D517 /* UITableView+MultipleSelectionEnhacements.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+MultipleSelectionEnhacements.m"; sourceTree = "<group>"; };
 		3A7C9DC8189EF64500E6D517 /* DUIBlockDispatcherTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIBlockDispatcherTests.m; sourceTree = "<group>"; };
+		3AF6713618CFCFD400E7FB4D /* DUIRuntimeTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIRuntimeTools.h; sourceTree = "<group>"; };
+		3AF6713718CFCFD400E7FB4D /* DUIRuntimeTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIRuntimeTools.m; sourceTree = "<group>"; };
+		3AF6713918CFDC8F00E7FB4D /* DUIRuntimeToolsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIRuntimeToolsTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				3A7C9DC8189EF64500E6D517 /* DUIBlockDispatcherTests.m */,
+				3AF6713918CFDC8F00E7FB4D /* DUIRuntimeToolsTests.m */,
 				3A5F25FC189EA5CF00C9ADB0 /* Supporting Files */,
 			);
 			path = TestbedTests;
@@ -213,6 +219,8 @@
 				3A7C9D68189EEA3200E6D517 /* DUIFastOneWayProxy.m */,
 				3A7C9D69189EEA3200E6D517 /* DUIObjectProxy.h */,
 				3A7C9D6A189EEA3200E6D517 /* DUIObjectProxy.m */,
+				3AF6713618CFCFD400E7FB4D /* DUIRuntimeTools.h */,
+				3AF6713718CFCFD400E7FB4D /* DUIRuntimeTools.m */,
 				3A7C9D6B189EEA3200E6D517 /* NSArray+IterateTrees.h */,
 				3A7C9D6C189EEA3200E6D517 /* NSArray+IterateTrees.m */,
 				3A7C9D6D189EEA3200E6D517 /* NSObject+MultipleDelegatesSupport.h */,
@@ -341,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AF6713818CFCFD400E7FB4D /* DUIRuntimeTools.m in Sources */,
 				3A7C9D84189EEA3200E6D517 /* NSObject+MultipleDelegatesSupport.m in Sources */,
 				3A7C9D83189EEA3200E6D517 /* NSArray+IterateTrees.m in Sources */,
 				3A7C9D8A189EEA3200E6D517 /* DUIConstraintFactory.m in Sources */,
@@ -365,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A7C9DC9189EF64500E6D517 /* DUIBlockDispatcherTests.m in Sources */,
+				3AF6713A18CFDC8F00E7FB4D /* DUIRuntimeToolsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
