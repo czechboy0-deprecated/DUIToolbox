@@ -8,10 +8,17 @@
 
 #import <XCTest/XCTest.h>
 #import "DUIRuntimeTools.h"
+#import <objc/message.h>
 
 @interface DUIRuntimeToolsTests : XCTestCase
 
 @end
+
+typedef struct {
+    Class isa;
+} dui_object;
+
+typedef dui_object* dui_id;
 
 @implementation DUIRuntimeToolsTests
 
@@ -27,10 +34,22 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testFakeId
+{
+    Class objectClass = [ClassInfo class];
+
+    dui_object object = { objectClass };
+    dui_id myid = &object;
+    id myidbridged = (__bridge id)(myid);
+    
+    id ret = objc_msgSend(myidbridged, @selector(class));
+    XCTAssert(ret == objectClass, @"We faked an object");
+}
+
+- (void)testClassHierarchy
 {
     NSDictionary *allClasses;
-    __unused NSDictionary *classHierarchy = [DUIRuntimeTools scanClassHierarchy:&allClasses];
+    __unused NSDictionary *classHierarchy = [DUIRuntimeTools snapshotClassHierarchyReturnBaseClassesFillAllClassInfos:&allClasses];
 
     [DUIRuntimeTools logHierarchyForClassInfo:allClasses[@"UIView"]];
     
