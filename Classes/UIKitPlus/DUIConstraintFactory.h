@@ -153,6 +153,14 @@
 + (NSLayoutConstraint *) constraintEqualHeightsOfItem:(id)item1 andItem:(id)item2;
 
 /**
+ Creates constraint for two items having the same height (+ constant).
+ @param item1 A UIView.
+ @param item2 A UIView.
+ @return NSLayoutConstraint - add it to the items' common superview : [superview addConstraint: constraint ]];
+ */
++ (NSLayoutConstraint *) constraintEqualHeightsOfItem:(id)item1 andItem:(id)item2 withConstant:(CGFloat)constant;
+
+/**
  Creates constraints for two items having the same size.
  @param item1 A UIView.
  @param item2 A UIView.
@@ -180,5 +188,18 @@
  @return NSArray of NSLayoutConstraints - add them to the items' superview.
  */
 + (NSArray *) constraintAllEqualSizesOfItems:(NSArray *)items;
+
+/**
+ Creates constraints for laying out items evenly across the x axis.
+ @param items NSArray of UIViews to space out evenly.
+ @param leftEdge CGFloat of leading value.
+ @param rightEdge CGFloat of trailing value.
+ @return NSArray of NSLayoutConstraints.
+ @warning All the views passed in MUST have the same superview.
+ */
++ (NSArray *) constraintEvenlyItemsHorizontally:(NSArray *)items
+                                       leftEdge:(CGFloat)leftEdge
+                                      rightEdge:(CGFloat)rightEdge;
+
 
 @end

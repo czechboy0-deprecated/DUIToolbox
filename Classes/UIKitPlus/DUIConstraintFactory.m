@@ -260,6 +260,16 @@
 + (NSLayoutConstraint *) _constraintEqualAttribute:(NSLayoutAttribute)attribute ofItem:(id)item1 andItem:(id)item2
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 {
+    return [self _constraintEqualAttribute:attribute
+                                    ofItem:item1
+                                   andItem:item2
+                              withConstant:0.0];
+}
+
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
++ (NSLayoutConstraint *) _constraintEqualAttribute:(NSLayoutAttribute)attribute ofItem:(id)item1 andItem:(id)item2 withConstant:(CGFloat)constant
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+{
     UIView * view1 = [self _convertAndStripOfAutoresizingMask:item1];
     UIView * view2 = [self _convertAndStripOfAutoresizingMask:item2];
     
@@ -270,7 +280,7 @@
                                     toItem:view2
                                  attribute:attribute
                                 multiplier:1.0
-                                  constant:0.0];
+                                  constant:constant];
     return [self _prepareConstraintForReturn:constraint];
 }
 
@@ -279,6 +289,13 @@
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 {
     return [self _constraintEqualAttribute:NSLayoutAttributeHeight ofItem:item1 andItem:item2];
+}
+
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
++ (NSLayoutConstraint *) constraintEqualHeightsOfItem:(id)item1 andItem:(id)item2 withConstant:(CGFloat)constant
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+{
+    return [self _constraintEqualAttribute:NSLayoutAttributeHeight ofItem:item1 andItem:item2 withConstant:constant];
 }
 
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
@@ -298,6 +315,99 @@
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 {
     return [self _constraintEqualAttribute:NSLayoutAttributeWidth ofItem:item1 andItem:item2];
+}
+
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
++ (NSArray *) constraintEvenlyItemsHorizontally:(NSArray *)items
+                                       leftEdge:(CGFloat)leftEdge
+                                      rightEdge:(CGFloat)rightEdge
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+{
+    /*
+     -[1]-[2]-[n]- etc.
+     - item 1 leading
+     - item n trailing
+     - items 2,...,n link to previous item
+     */
+    
+    if (!items || [items count] < 1) {
+        return nil;
+    }
+    
+    NSArray *namesViews = [self _viewNames:@"view" forCount:items.count];
+    NSMutableDictionary *viewDict = [NSMutableDictionary dictionaryWithObjects:items forKeys:namesViews];
+    NSMutableString *visualLanguage = [NSMutableString new];
+    
+    NSMutableArray *spacers = [NSMutableArray new];
+    NSArray *namesSpacers = [self _viewNames:@"spacer" forCount:items.count-1];
+    
+    UIView *itemsSuperview = [items[0] superview];
+    assert(itemsSuperview);
+    
+    [items enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop){
+        
+        //make sure the views are valid and usable
+        UIView * view = [self _convertAndStripOfAutoresizingMask:obj];
+        assert(view.superview);
+        
+        if (idx == 0) {
+            //item 1
+            [visualLanguage appendFormat:@"H:|-%f-[%@]", leftEdge, namesViews[idx]];
+        } else {
+            //middle item
+            //create a spacer
+            
+            UIView *spacer = [[UIView alloc] initWithFrame:CGRectZero];
+            spacer = [self _convertAndStripOfAutoresizingMask:spacer];
+            
+            spacer.alpha = 0.0;
+//            spacer.backgroundColor = [UIColor redColor];
+            
+            [itemsSuperview addSubview:spacer];
+            
+            [spacer addConstraint: [ConstraintFactory constraintHeightOfItem:spacer toConstant:30]];
+            [spacer.superview addConstraint: [ConstraintFactory constraintEqualCenterYOfItem:spacer andItem:spacer.superview]];
+            
+            [spacers addObject:spacer];
+            
+            NSUInteger spacerIdx = idx-1;
+            
+            if (spacerIdx == 0) {
+                [visualLanguage appendFormat:@"[%@][%@]", namesSpacers[spacerIdx], namesViews[idx]];
+            } else {
+                [visualLanguage appendFormat:@"[%@(==%@)][%@]", namesSpacers[spacerIdx], namesSpacers[0], namesViews[idx]];
+            }
+        }
+        
+        if (idx == items.count-1) {
+            //item n
+            [visualLanguage appendFormat:@"-%f-|", rightEdge];
+        }
+        
+    }];
+    
+    [viewDict addEntriesFromDictionary:[NSDictionary dictionaryWithObjects:spacers forKeys:namesSpacers]];
+    
+    NSArray *allConstraints = [NSLayoutConstraint constraintsWithVisualFormat: visualLanguage
+                                                                      options: 0
+                                                                      metrics: nil
+                                                                        views: viewDict];
+    return [self _prepareConstraintsForReturn:allConstraints];
+}
+
+
+#pragma mark - Private methods
+
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
++ (NSArray *) _viewNames:(NSString *)name forCount:(NSUInteger)count
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+{
+    NSMutableArray *names = [NSMutableArray new];
+    for (NSUInteger i = 0; i < count; i++) {
+        [names addObject:[NSString stringWithFormat:@"%@%i", name, i]];
+    }
+    
+    return [names copy];
 }
 
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
