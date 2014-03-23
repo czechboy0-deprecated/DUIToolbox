@@ -365,8 +365,8 @@
             
             [itemsSuperview addSubview:spacer];
             
-            [spacer addConstraint: [ConstraintFactory constraintHeightOfItem:spacer toConstant:30]];
-            [spacer.superview addConstraint: [ConstraintFactory constraintEqualCenterYOfItem:spacer andItem:spacer.superview]];
+            [spacer addConstraint: [self constraintHeightOfItem:spacer toConstant:30]];
+            [spacer.superview addConstraint: [self constraintEqualCenterYOfItem:spacer andItem:spacer.superview]];
             
             [spacers addObject:spacer];
             
