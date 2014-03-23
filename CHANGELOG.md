@@ -19,3 +19,7 @@ Subspecs added to separate Foundation and UIKit-focused classes.
 ## 0.2.2
 
 More documentation.
+
+## 0.3
+
+New functionality: DUIRuntimeTools, new constraints in DUIConstraintFactory.
