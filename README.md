@@ -3,8 +3,6 @@
 [![Version](http://cocoapod-badges.herokuapp.com/v/DUIToolbox/badge.png)](http://cocoadocs.org/docsets/DUIToolbox)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/DUIToolbox/badge.png)](http://cocoadocs.org/docsets/DUIToolbox)
 
-iOS Toolbox
-
 Created by Honza Dvorsky - http://honzadvorsky.com
 
 The DUIToolbox is a mini library of classes useful for iOS developers.
