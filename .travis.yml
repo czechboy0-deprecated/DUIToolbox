@@ -1,1 +1,3 @@
 language: objective-c
+xcode_project: Testbed/Testbed.xcodeproj
+xcode_scheme: Testbed

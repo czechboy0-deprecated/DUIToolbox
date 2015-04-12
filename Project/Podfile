@@ -1,7 +1,0 @@
-pod "DUIToolbox", :path => "../DUIToolbox.podspec"
-
-#target "ToolboxDemo" do
-#end
-
-#target "ToolboxDemoTests" do
-#end
