@@ -1,9 +1,9 @@
-# DUIToolbox
+# [DEPRICATED] DUIToolbox
 
 [![Version](http://cocoapod-badges.herokuapp.com/v/DUIToolbox/badge.png)](http://cocoadocs.org/docsets/DUIToolbox)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/DUIToolbox/badge.png)](http://cocoadocs.org/docsets/DUIToolbox)
 
-Created by Honza Dvorsky - http://honzadvorsky.com
+# :warning: This project is depricated, it will receive no further maintenance.
 
 The DUIToolbox is a mini library of classes useful for iOS developers.
 
